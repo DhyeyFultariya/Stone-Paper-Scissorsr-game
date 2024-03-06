@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stone,Paper,Scissorsr</title>
+    <link rel="stylesheet" href="game.css">
+
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome</h1><br>
+
+    <div id="Heading">
+    <h1>Stone, Paper, Scissorsr - Game</h1><br>
+    </div>
+    <button class="button" onclick="
+    // const userChoise = 'You have chosen Stone';
+    // console.log('You have chosen Stone');
+    let randomNumber = Math.random()*3;//generate randomNum btn 1to3
+    let computerChoice;
+    if(randomNumber<=1){
+        computerChoice = 'Stone🪨';
+    }
+    else if(randomNumber <=2) {
+        computerChoice = 'Paper📃';
+    }
+    else{
+        computerChoice = 'Scissor✂️';
+    }
+
+    let result; 
+    if(computerChoice === 'Scissor✂️'){
+        result = 'You are Won!🏆';
+    }
+    else if(computerChoice === 'Stone🪨'){
+        result = 'It is a Draw😒';
+    }
+    else if(computerChoice === 'Paper📃'){
+        result = 'You are Lost!😢';
+    }
+    alert(` You have chosen Stone🪨 -- Computer Chose ${computerChoice} --- ${result} `)
+
+    ">Stone</button>
+
+    <button class="button" onclick="
+    randomNumber = Math.random()*3;//generate randomNum btn 1to3
+    // computerChoice
+    if(randomNumber<=1){
+        computerChoice = 'Stone🪨';
+    }
+    else if(randomNumber <=2) {
+        computerChoice = 'Paper📃';
+    }
+    else{
+        computerChoice = 'Scissor✂️';
+    }
+
+    // result
+    if(computerChoice === 'Scissor✂️'){
+        result = 'You are Lost!😢';
+    }
+    else if(computerChoice === 'Stone🪨'){
+        result = 'You are Won!🏆';
+    }
+    else if(computerChoice === 'Paper📃'){
+        result = 'It is a Draw😒';
+    }
+
+    alert(` You have chosen Paper📃 -- Computer Chose ${computerChoice} --- ${result} `)
+    ">Paper</button>
+
+    <button class="button" onclick="
+    randomNumber = Math.random()*3;//generate randomNum btn 1to3
+    // computerChoice
+    if(randomNumber<=1){
+        computerChoice = 'Stone🪨';
+    }
+    else if(randomNumber <=2) {
+        computerChoice = 'Paper📃';
+    }
+    else{
+        computerChoice = 'Scissor✂️';
+    }
+ 
+    // result
+    if(computerChoice === 'Scissor✂️'){
+        result = 'It is a Draw😒';
+    }
+    else if(computerChoice === 'Stone🪨'){
+        result = 'You are Lost!😢';
+    }
+    else if(computerChoice === 'Paper📃'){
+        result = 'You are Won!🏆';
+    }
+
+    alert(` You have chosen Scissor✂️ -- Computer Chose ${computerChoice} --- ${result} `)
+    ">Scissorsr</button>
+    </div>
+
+</body>
+</html>
